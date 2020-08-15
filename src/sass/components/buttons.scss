@@ -1,0 +1,11 @@
+.chat-button {
+  margin-right: 13px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: absolute;
+  right: 0;
+  color: $light-color;
+  outline-color: $outline-button-color;
+  background-color: $submit-button-color;
+}

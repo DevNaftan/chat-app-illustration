@@ -1,0 +1,16 @@
+.chat-text {
+  display: flex;
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border-radius: 20px;
+  align-items: center;
+  color: $placeholder-color;
+  background-color: $light-color;
+  input {
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: .55em;
+    opacity: .5;
+    outline: none;
+  }
+}

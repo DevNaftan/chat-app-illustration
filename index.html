@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App Illustration</title>
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./assets/fonts/icofont/icofont.min.css">
+  <script src="https://kit.fontawesome.com/4894c5e846.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="app-container">
+      <div class="mobile">
+        <div class="notch"></div>
+        <div class="display">
+          <div class="app-header">
+            <div class="profile">
+              <i class="icofont-curved-left"></i>
+              <figure class="profile__img">
+                <img src="./assets/images/avatar.jpg" alt="Avatar">
+              </figure>
+              <div class="profile__info">
+                <span class="user-name">Samuel Green</span>
+                <span class="user-status">Available to Walk</span>
+              </div>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="app-main">
+            <div class="chat-box to-chat">
+              <p>That sounds great. I'd be happy to discuss more.</p>
+            </div>
+            <div class="chat-box to-chat">
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+            <div class="gallery-box">
+              <figure class="sent-picture">
+                <img src="./assets/images/dog-image-1.jpg" alt="Sent picture">
+              </figure>
+              <figure class="sent-picture">
+                <img src="./assets/images/dog-image-2.jpg" alt="Sent picture">
+              </figure>
+              <figure class="sent-picture">
+                <img src="./assets/images/dog-image-3.jpg" alt="Sent picture">
+              </figure>
+            </div>
+            <div class="chat-box from-chat">
+              <p>Here are a few pictures. She's a happy girl!</p>
+            </div>
+            <div class="chat-box from-chat">
+              <p>Can you make it?</p>
+            </div>
+            <div class="chat-box to-chat">
+              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </div>
+            <div class="chat-box to-chat chat-box--time">
+              <div class="time-container">
+                <i class="far fa-circle"></i>
+                <span class="time">30 minutes walk</span>
+              </div>
+              <span class="price">$29</span>
+            </div>
+            <div class="chat-box to-chat chat-box--time">
+              <div class="time-container">
+                <i class="far fa-circle"></i>
+                <span class="time">1 hour walk</span>
+              </div>
+              <span class="price">$49</span>
+            </div>
+          </div>
+          <form class="message">
+            <div class="chat-text">
+              <input type="text" name="message" id="message" placeholder="Type a message...">
+            </div>
+            <button class="chat-button" type="submit">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="description-container">
+      <h1 class="title">Simple booking</h1>
+      <p class="description">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
