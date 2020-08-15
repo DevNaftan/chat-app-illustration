@@ -25,7 +25,7 @@ body {
   min-height: 100%;
   position: relative;
   font-size: 16px;
-  background-color: #f5f3f7;
+  background-color: white;
 }
 @media only screen and (min-width: 1024px) {
   body {
@@ -48,7 +48,7 @@ main {
 }
 @media only screen and (min-width: 1440px) {
   main {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     gap: 60px;
     padding-left: 128px;
@@ -81,11 +81,17 @@ figure {
 }
 @media only screen and (min-width: 1300px) {
   .bg1 {
-    left: -150px;
+    left: -200px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .bg1 {
+    left: -140px;
   }
 }
 
 .bg2 {
+  height: 500px;
   border-top-right-radius: 100%;
   border-top-left-radius: 100%;
   bottom: 0;
@@ -95,7 +101,13 @@ figure {
 }
 @media only screen and (min-width: 1300px) {
   .bg2 {
-    right: -150px;
+    right: -290px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .bg2 {
+    height: 675px;
+    right: -225px;
   }
 }
 
@@ -145,7 +157,7 @@ figure {
   border-radius: 20px 20px 5px 5px;
   justify-content: space-between;
   align-items: flex-end;
-  color: #f5f3f7;
+  color: white;
   background-image: linear-gradient(to left, #e942ff, #8838ff);
 }
 

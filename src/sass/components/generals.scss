@@ -18,7 +18,7 @@ body {
   min-height: 100%;
   position: relative;
   font-size: $font-size;
-  background-color: $background-color;
+  background-color: $light-color;
   @include media(desktop) {
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ main {
     align-items: center;
   }
   @include media(desktop2) {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     gap: 60px;
     padding-left: 128px;

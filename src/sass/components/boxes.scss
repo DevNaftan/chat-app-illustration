@@ -15,11 +15,15 @@
   left: -382px;
   background-image: linear-gradient(to bottom, $bg1-color, $bg2-color);
   @include media(desktop1) {
-    left: -150px;
+    left: -200px;
+  }
+  @include media(desktop2) {
+    left: -140px;
   }
 }
 
 .bg2 {
+  height: 500px;
   border-top-right-radius: 100%;
   border-top-left-radius: 100%;
   bottom: 0;
@@ -27,7 +31,11 @@
   background-color: $bg3-color;
   opacity: .05;
   @include media(desktop1) {
-    right: -150px;
+    right: -290px;
+  }
+  @include media(desktop2) {
+    height: 675px;
+    right: -225px;
   }
 }
 
@@ -64,7 +72,7 @@
 .display {
   border-radius: 20px;
   position: relative;
-  background-color: $background-color;
+  background-color: $background-app-color;
 }
 
 .app-header {
@@ -75,7 +83,7 @@
   border-radius: 20px 20px 5px 5px;
   justify-content: space-between;
   align-items: flex-end;
-  color: $background-color;
+  color: $light-color;
   background-image: linear-gradient(to left, $gradient1-color, $gradient2-color);
 }
 
