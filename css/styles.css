@@ -5,6 +5,9 @@
 /************/
 /** COLORS **/
 /************/
+/**************/
+/** GENERALS **/
+/**************/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -164,6 +167,7 @@ figure {
 .profile {
   display: flex;
   align-items: center;
+  animation: show 1.5s forwards;
 }
 .profile__info {
   display: flex;
@@ -199,6 +203,7 @@ figure {
   margin-top: 7px;
   border-radius: 10px 10px 10px 4.5px;
   background-color: #ede5f4;
+  animation: showLeft 1s forwards;
 }
 .to-chat p {
   color: #9241c8;
@@ -211,6 +216,7 @@ figure {
   border-radius: 10px 10px 4.5px 10px;
   align-self: flex-end;
   background-color: white;
+  animation: showRight 1s forwards;
 }
 .from-chat p {
   color: #6e5d7e;
@@ -237,6 +243,7 @@ figure {
   margin: 13px 0 7.5px 0;
   align-self: flex-end;
   justify-content: space-between;
+  animation: showRight 1s forwards;
 }
 
 .sent-picture {
@@ -253,11 +260,13 @@ figure {
   position: relative;
   justify-content: center;
   align-items: center;
+  animation: show 1s forwards;
 }
 
 .description-container {
   padding: 10px 10px 45px 10px;
   text-align: center;
+  animation: showBottom 1s forwards;
 }
 @media only screen and (min-width: 1024px) {
   .description-container {
@@ -315,6 +324,7 @@ figure {
   margin-bottom: 7.5px;
   font-size: 0.5em;
   opacity: 0.75;
+  animation: show 1.5s forwards;
 }
 
 .fa-circle {
@@ -354,6 +364,46 @@ figure {
   color: white;
   outline-color: #e570ff;
   background-color: #3e2753;
+  animation: showLeft 1s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showRight {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes showLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

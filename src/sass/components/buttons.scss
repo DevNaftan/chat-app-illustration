@@ -8,4 +8,5 @@
   color: $light-color;
   outline-color: $outline-button-color;
   background-color: $submit-button-color;
+  animation: showLeft $animation-time forwards;
 }

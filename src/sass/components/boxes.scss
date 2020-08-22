@@ -90,6 +90,7 @@
 .profile {
   display: flex;
   align-items: center;
+  animation: show $animation-time2 forwards;
   &__info {
     display: flex;
     flex-direction: column;
@@ -125,6 +126,7 @@
   margin-top: 7px;
   border-radius: 10px 10px 10px 4.5px;
   background-color: $to-chat-bg-color;
+  animation: showLeft $animation-time forwards;
   p {
     color: $to-chat-color;
   }
@@ -137,6 +139,7 @@
   border-radius: 10px 10px 4.5px 10px;
   align-self: flex-end;
   background-color: $light-color;
+  animation: showRight $animation-time forwards;
   p {
     color: $from-chat-color;
   }
@@ -163,6 +166,7 @@
   margin: 13px 0 7.5px 0;
   align-self: flex-end;
   justify-content: space-between;
+  animation: showRight $animation-time forwards;
 }
 
 .sent-picture {
@@ -179,11 +183,13 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  animation: show $animation-time forwards;
 }
 
 .description-container {
   padding: 10px 10px 45px 10px;
   text-align: center;
+  animation: showBottom $animation-time forwards;
   @include media(desktop) {
     padding: 10px;
     text-align: left;
