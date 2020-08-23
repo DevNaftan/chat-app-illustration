@@ -1,5 +1,5 @@
 # ChatApp Illustration
-An ChatApp Illustration
+An responsive ChatApp Illustration
 
 ### Technologies used
 * HTML5
