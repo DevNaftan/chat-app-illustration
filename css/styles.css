@@ -28,7 +28,7 @@ body {
   min-height: 100%;
   position: relative;
   font-size: 16px;
-  background-color: white;
+  background-color: #f5f3f7;
 }
 @media only screen and (min-width: 1024px) {
   body {
