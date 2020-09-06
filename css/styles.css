@@ -364,7 +364,7 @@ figure {
   color: white;
   outline-color: #e570ff;
   background-color: #3e2753;
-  animation: showLeft 1s forwards;
+  animation: rotate 1s forwards;
 }
 
 @keyframes show {
@@ -403,6 +403,16 @@ figure {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
   }
 }
 
